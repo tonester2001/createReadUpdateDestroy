@@ -1,7 +1,3 @@
-create database db_name;
-
-use db_name;
-
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
   `firstName` varchar(100) NOT NULL,
