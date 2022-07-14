@@ -78,9 +78,6 @@ while($res = mysqli_fetch_array($result))
 </head>
 
 <body>
-	<a href="index.php">Home</a>
-	<br/><br/>
-	
 	<form name="form1" method="post" action="edit.php">
 		<table border="0">
 			<tr> 
@@ -134,8 +131,9 @@ while($res = mysqli_fetch_array($result))
 			
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
-				<td><input type="submit" name="update" value="Update"></td>
-			</tr>
+				<td><input type="submit" name="update" value="Update">
+                <input type="button" value="Go Back" onClick="document.location.href='index.php'"/></td>
+            </tr>
 		</table>
 	</form>
 </body>
