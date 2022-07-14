@@ -1,3 +1,7 @@
+create database YOUR_DB_NAME;
+
+use YOUR_DB_NAME;
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,
   `firstName` varchar(100) NOT NULL,
@@ -11,6 +15,6 @@ CREATE TABLE `users` (
   `state` varchar(100) NOT NULL,
   `country` varchar(100) NOT NULL,
   `about` text(280) NOT NULL,
-  
+
   PRIMARY KEY  (`id`)
 );
