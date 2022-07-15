@@ -1,6 +1,6 @@
 <?php
 //including the database connection file
-include("db/config.php");
+include("server/config.php");
 
 //getting id of the data from url
 $id = $_GET['id'];
