@@ -2,7 +2,7 @@
 // disable error reporting
 error_reporting(E_ERROR|E_PARSE);
 // including the database connection file
-include_once("config.php");
+include_once("db/config.php");
 require('index.php');
 
 if(isset($_POST['update']))
