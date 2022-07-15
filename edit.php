@@ -132,8 +132,8 @@ while($res = mysqli_fetch_array($result))
 			<tr>
 				<td><input type="hidden" name="id" value=<?php echo $_GET['id'];?>></td>
 				<td><input type="submit" name="update" value="Update">
-                <input type="button" value="Go Back" onClick="document.location.href='index.php'"/></td>
-            </tr>
+                		<input type="button" value="Go Back" onClick="document.location.href='index.php'"/></td>
+            		</tr>
 		</table>
 	</form>
 </body>
