@@ -105,7 +105,7 @@ if(isset($_POST['Submit'])) {
 			<tr> 
 				<td></td>
 				<td><input type="submit" name="Submit" value="Add">
-                <input type="button" value="Go Back" onClick="document.location.href='index.php'"/></td>
+                		<input type="button" value="Go Back" onClick="document.location.href='index.php'"/></td>
 			</tr>
 		</table>
 	</form>
