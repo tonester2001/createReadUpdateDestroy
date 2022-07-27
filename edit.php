@@ -19,7 +19,6 @@ if(isset($_POST['update']))
 	$state = mysqli_real_escape_string($mysqli, $_POST['state']);
 	$country = mysqli_real_escape_string($mysqli, $_POST['country']);
 	$about = mysqli_real_escape_string($mysqli, $_POST['about']);
-	$profilePicture = mysqli_real_escape_string($mysqli, $_POST['profilePicture']);
 	
 	// checking empty fields
 	if(empty($firstName) || empty($lastName) || empty($email)) {	
@@ -69,7 +68,6 @@ while($res = mysqli_fetch_array($result))
 	$state = $res['state'];
 	$country = $res['country'];
 	$about = $res['about'];
-	$profilePicture = $res['profilePicture'];
 }
 ?>
 <html>
@@ -123,10 +121,6 @@ while($res = mysqli_fetch_array($result))
 			<tr> 
 				<td>About Me</td>
 				<td><input type="text" name="about" value="<?php echo $about;?>"></td>
-			</tr>
-			<tr> 
-				<td>Profile Picture</td>
-				<td><input type="file" name="profilePicture" value="<?php echo $profilePicture;?>"></td>
 			</tr>
 			
 			<tr>
