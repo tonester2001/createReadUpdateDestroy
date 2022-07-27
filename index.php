@@ -28,7 +28,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
 		<td>State</td>
 		<td>Country</td>
 		<td>About Me</td>
-		<td>Profile Picture</td>
 		<td>Update</td>
 	</tr>
 	<?php 
