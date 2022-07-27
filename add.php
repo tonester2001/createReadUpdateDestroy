@@ -20,7 +20,6 @@ if(isset($_POST['Submit'])) {
 	$state = mysqli_real_escape_string($mysqli, $_POST['state']);
 	$country = mysqli_real_escape_string($mysqli, $_POST['country']);
 	$about = mysqli_real_escape_string($mysqli, $_POST['about']);
-	$profilePicture = mysqli_real_escape_string($mysqli, $_POST['profilePicture']);
 		
 	// checking empty fields
 	if(empty($firstName) || empty($lastName) || empty($email)) {
